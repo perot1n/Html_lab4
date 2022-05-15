@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #grid{ 
+          display: grid;
+          grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr 1fr ;
+          grid-gap: 0.2vw;
+          width: 200px;
+          height: 300px;
+          margin: 0 auto;
+          border: 1px solid black;
+          color: white;
+          font-weight: bold;
+          border-radius: 12px;
+            background-color: black;
+          }
+          #grid2{
+            display: grid;
+            grid-template-columns:  1fr 1fr 1fr ;
+           width: 13px;
+           grid-gap: 0.8vw;
+        }
+        #orange{
+          padding: 8px;
+          font-size: 20px;
+          background: orange;
+          text-align: center;
+        }
+        #number{
+          padding: 8px;
+          font-size: 20px;
+          font-family: "Noto Sans", sans-serif;
+          background: rgb(103,101,108,255);
+          text-align: center;
+        }
+        #column{
+            font-size: 20px;
+            font-family: "Noto Sans", sans-serif;
+          padding: 8px;
+          background: linear-gradient(to top, #535158 0%, #5d5c5f 51%, #5b6064 100%);
+          text-align: center; 
+        }
+        .a1{ 
+            grid-column-start: 1;
+            grid-column-end: 3;
+            border-radius:  0 0 0 10px ;
+            font-size: 20px;
+            font-family: "Noto Sans", sans-serif;
+          padding: 8px;
+          background: rgb(103,101,108,255);
+          text-align: center;
+        }
+        .a2{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            border-radius: 10px 10px 0 0 ;
+            font-size: 40px;
+            font-family: "Noto Sans", sans-serif;
+          padding: 8px;
+          background: rgb(84,82,90,255);
+          text-align: right;
+          text-align: end;
+        }
+        .a3{
+            border-radius: 0 0 10px 0;
+            font-size: 20px;
+            font-family: "Noto Sans", sans-serif;
+          padding: 8px;
+          background: orange;
+          text-align: center;
+        }
+        .a4{
+           margin-top: 10%
+        }
+        .circlered {
+  background:red;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+ }
+ .circleyellow {
+  background:yellow;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+ }
+ .circlegreen {
+  background:green;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+ }
+        </style>
+        <div  id="grid">
+            <div class="a2">
+                <div id="grid2">
+                    <div class="circlered"></div>
+                    <div class="circleyellow"></div>
+                    <div class="circlegreen"></div>
+                </div>
+                <h3 class="a4">0</h3> </div>
+            <div id="column">AC</div>
+            <div id="column">+/-</div>
+            <div id="column">%</div>
+            <div id="orange">÷</div>
+          <div id="number">7</div>
+          <div id="number">8</div>
+          <div id="number"> 9</div>
+          <div id="orange">×</div>
+          <div id="number">4</div>
+          <div id="number">5</div>
+          <div id="number">6</div>
+          <div id="orange">-</div>
+          <div id="number">1</div>
+          <div id="number">2</div>
+          <div id="number">3</div>
+          <div id="orange">+</div>
+          <div class="a1">0</div>
+          <div id="number">,</div>
+          <div class="a3">=</div>
+        </div>
+</div>
+</body>
+</html>
